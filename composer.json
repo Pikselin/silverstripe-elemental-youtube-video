@@ -1,7 +1,7 @@
 {
 	"name": "pikselin/silverstripe-elemental-youtube-video",
-	"description": "Configurable basic auth that allows certain UAs to bypass it",
-	"type": "silverstripe-module",
+	"description": "Elemental with a YouTube video and transcripts",
+	"type": "silverstripe-vendormodule",
 	"authors": [
 		{
 			"name": "Pikselin",
