@@ -15,6 +15,10 @@
 		"youtube",
 		"video"
 	],
+	"homepage" : "https://github.com/Pikselin/silverstripe-elemental-youtube-video",
+	"support" : {
+		"issues" : "https://github.com/Pikselin/silverstripe-elemental-youtube-video/issues"
+	},
 	"require": {
 		"silverstripe/cms": "^4",
 		"silverstripe/framework": "^4",
