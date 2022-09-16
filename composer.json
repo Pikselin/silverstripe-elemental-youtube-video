@@ -1,0 +1,34 @@
+{
+	"name": "pikselin/silverstripe-elemental-youtube-video",
+	"description": "Configurable basic auth that allows certain UAs to bypass it",
+	"type": "silverstripe-module",
+	"authors": [
+		{
+			"name": "Pikselin",
+			"email": "dev@pikselin.com",
+			"homepage": "https://www.pikselin.com"
+		}
+	],
+	"keywords": [
+		"silverstripe",
+		"elemental",
+		"youtube",
+		"video"
+	],
+	"require": {
+		"silverstripe/cms": "^4",
+		"silverstripe/framework": "^4",
+		"dnadesign/silverstripe-elemental": "^4"
+	},
+	"extra": {
+		"expose": [
+			"client"
+		]
+	},
+	"license": "The MIT License (MIT)",
+	"autoload": {
+		"psr-4": {
+			"Pikselin\\YouTube\\": "src/"
+		}
+	}
+}
