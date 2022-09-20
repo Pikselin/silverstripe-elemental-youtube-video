@@ -1,0 +1,83 @@
+/**
+ * Override these styles in your own Stylesheet.
+ **/
+
+.pikselin__youtube__elements__video {
+    padding-bottom: 2rem;
+}
+.pikselin__youtube__elements__video .video {
+    display: grid;
+    gap: 2rem;
+}
+@media (min-width: 1024px) {
+    .pikselin__youtube__elements__video .video {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 1rem;
+    }
+}
+@media (min-width: 1024px) {
+    .pikselin__youtube__elements__video .video__wrapper {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+}
+.pikselin__youtube__elements__video .video__wrapper iframe {
+    display: block;
+}
+@media (min-width: 1024px) {
+    .pikselin__youtube__elements__video .video__text {
+        grid-columns: 2 / 3;
+        grid-row: 1 / 2;
+    }
+}
+.pikselin__youtube__elements__video .video__text h3 {
+    margin-bottom: 1rem;
+}
+@media (min-width: 1024px) {
+    .pikselin__youtube__elements__video .video__text h3 {
+        margin-bottom: 2rem;
+    }
+}
+.pikselin__youtube__elements__video .video__text__duration {
+    color: #656565;
+    margin-top: 1rem;
+}
+@media (min-width: 1024px) {
+    .pikselin__youtube__elements__video .video__text__duration {
+        margin-top: 2rem
+    }
+}
+.pikselin__youtube__elements__video .video-transcription {
+    border-color: #656565;
+    border-style: solid;
+    border-width: .05rem 0;
+    padding: 1.5rem 0;
+}
+@media (min-width: 1024px) {
+    .pikselin__youtube__elements__video .video-transcription {
+        border: none;
+        padding: 0;
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+    }
+}
+.pikselin__youtube__elements__video .video-transcription .button {
+    font-weight: bold;
+}
+.pikselin__youtube__elements__video .video-transcription .button .svg-icon {
+    color: #0f3f61;
+    width: 1.3rem;
+    height: 1.3rem;
+    transition: 0.3s ease-in-out;
+}
+.pikselin__youtube__elements__video .video-transcription--hidden .button .svg-icon {
+    transform: rotate(0);
+}
+.pikselin__youtube__elements__video .video-transcription--visible .button .svg-icon {
+    transform: rotate(180deg);
+}
+.pikselin__youtube__elements__video .video-transcription__text {
+    display: none;
+    margin-top: 1.5rem;
+}
+
