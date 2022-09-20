@@ -22,7 +22,8 @@
 	"require": {
 		"silverstripe/cms": "^4",
 		"silverstripe/framework": "^4",
-		"dnadesign/silverstripe-elemental": "^4"
+		"dnadesign/silverstripe-elemental": "^4",
+		"guzzlehttp/guzzle": "^7"
 	},
 	"extra": {
 		"expose": [
