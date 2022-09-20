@@ -1,5 +1,5 @@
 <% if $VideoID %>
-    $BlockTitle.RAW
+    <% if $Title && $ShowTitle %><h2 class="element__title">$Title</h2><% end_if %>
     <div class="video">
         <div class="video__wrapper">
             <iframe
