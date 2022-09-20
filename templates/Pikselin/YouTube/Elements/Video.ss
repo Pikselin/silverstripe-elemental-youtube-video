@@ -26,7 +26,9 @@
         <% if $Transcription %>
             <div class="video-transcription video-transcription--hidden">
                 <button class="button no-button text-left with-icon icon-left" type="button" aria-controls="transcription-$ID">
-                    <img class="chevron-down" alt="chevron-down" src="{$ThemeDir}/images/chevron-down.svg">
+                    <svg class="icon svg-icon">
+                        <use xlink:href="$resourceURL('pikselin/silverstripe-elemental-youtube-video:client/images/sprite.icons.svg')#chevron-down"></use>
+                    </svg>
                     Read transcription for this video
                 </button>
                 <div class="video-transcription__text" id="transcription-$ID" aria-hidden="false">
