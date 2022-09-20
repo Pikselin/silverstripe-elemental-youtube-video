@@ -1,0 +1,12 @@
+---
+Name: youtube-video-extensions
+---
+# Adds css/js requirement directive
+PageController:
+  extensions:
+    - Pikselin\YouTube\Extensions\YouTubeControllerExtension
+
+# Add YouTube API key to SiteConfig
+Silverstripe\SiteConfig\SiteConfig:
+  extensions:
+    - Pikselin\YouTube\Extensions\YouTubeSiteConfigExtension

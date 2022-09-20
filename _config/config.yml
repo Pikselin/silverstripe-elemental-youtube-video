@@ -1,0 +1,6 @@
+---
+Name: youtube-video-config
+---
+# Add API key to a tab that can be con figured by the 'add_to_tab' directive
+Pikselin\YouTube\Extensions\YouTubeSiteConfigExtension:
+  add_to_tab: 'Root.Main'
