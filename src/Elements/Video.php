@@ -165,6 +165,19 @@ class Video extends BaseElement
         return 'Video';
     }
 
+    /**
+     * Provides a summary to the gridfield.
+     *
+     * @return array
+     * @throws \SilverStripe\ORM\ValidationException
+     */
+    protected function provideBlockSchema()
+    {
+        $blockSchema = parent::provideBlockSchema();
+        $blockSchema['content'] = $this->getSummary();
+        return $blockSchema;
+    }
+
     // grabs the duration of the video out of our stored YouTube data
     public function getDuration()
     {
