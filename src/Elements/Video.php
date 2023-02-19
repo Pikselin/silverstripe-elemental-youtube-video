@@ -24,11 +24,7 @@ class Video extends BaseElement
         'Transcription' => 'HTMLText',
         'YouTubeData' => 'Text',
         'Content' => 'HTMLText',
-    ];
-    
-    public function getType() {
-        return _t(__CLASS__ . '.BlockType', 'Video embed');
-    }    
+    ]; 
     
     protected function provideBlockSchema() {
         $blockSchema = parent::provideBlockSchema();
