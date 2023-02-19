@@ -25,6 +25,21 @@ class Video extends BaseElement
         'YouTubeData' => 'Text',
         'Content' => 'HTMLText',
     ];
+    
+    public function getType() {
+        return _t(__CLASS__ . '.BlockType', 'Video embed');
+    }    
+    
+    protected function provideBlockSchema() {
+        $blockSchema = parent::provideBlockSchema();
+        //if($this->Content ||) {
+        $blockSchema['content'] = $this->getSummary();
+        //} else {
+        //    $blockSchema['content'] = '';
+        //}
+
+        return $blockSchema;
+    }    
 
     public function getSummary()
     {
