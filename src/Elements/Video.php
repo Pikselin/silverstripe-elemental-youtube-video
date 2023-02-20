@@ -24,18 +24,7 @@ class Video extends BaseElement
         'Transcription' => 'HTMLText',
         'YouTubeData' => 'Text',
         'Content' => 'HTMLText',
-    ]; 
-    
-    protected function provideBlockSchema() {
-        $blockSchema = parent::provideBlockSchema();
-        //if($this->Content ||) {
-        $blockSchema['content'] = $this->getSummary();
-        //} else {
-        //    $blockSchema['content'] = '';
-        //}
-
-        return $blockSchema;
-    }    
+    ];  
 
     public function getSummary()
     {
