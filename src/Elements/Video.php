@@ -115,7 +115,7 @@ class Video extends BaseElement
         }
 
         // some of our older entries just use the ID, so check for that...
-        if (if !empty($url) && strlen(trim($url)) === 11) {
+        if (!empty($url) && strlen(trim($url)) === 11) {
             return trim($url);
         }
 
