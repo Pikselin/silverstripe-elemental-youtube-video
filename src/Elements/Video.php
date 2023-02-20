@@ -106,6 +106,10 @@ class Video extends BaseElement
      */
     public function getYouTubeID($url = FALSE)
     {
+        if(!$this->VideoID) {
+            return false;
+        }
+        
         if (!$url) {
             $url = $this->VideoID;
         }
