@@ -20,7 +20,7 @@
 		"issues" : "https://github.com/Pikselin/silverstripe-elemental-youtube-video/issues"
 	},
 	"require": {
-		"silverstripe/cms": "^4 || ^5e",
+		"silverstripe/cms": "^4 || ^5",
 		"silverstripe/framework": "^4 || ^5",
 		"dnadesign/silverstripe-elemental": "^4 || ^5",
 		"guzzlehttp/guzzle": "^7"
