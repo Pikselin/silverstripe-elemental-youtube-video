@@ -60,7 +60,7 @@ class Video extends BaseElement
 
         $fields->addFieldToTab('Root.Main',
             TextField::create('VideoID', 'Video URL')
-                ->setDescription('Enter the video URL.<br/>e.g. https://www.youtube.com/watch?v=87mvQuVKeuU</p></div>')
+                ->setDescription('Enter the video URL.<br/>e.g. https://www.youtube.com/watch?v=87mvQuVKeuU')
         );
 
         $fields->addFieldToTab('Root.Main',
